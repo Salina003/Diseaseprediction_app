@@ -57,6 +57,7 @@ body {
     box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
     transition: 0.3s;
     animation: fadeIn 2s ease;
+    color: #374151 !important;
 }
 
 .feature-box:hover {
@@ -75,7 +76,8 @@ body {
     position: relative;
     overflow: hidden;
 
-    min-height: 130px;  /* ✅ ADD THIS */
+    min-height: 150px;  /* ✅ ADD THIS */
+    margin-bottom: 25px; 
     
 }
 
@@ -90,6 +92,7 @@ body {
     left: -50%;
     opacity: 0;
     transition: 0.4s;
+    pointer-events: none;
 }
 
 .card:hover::before {
@@ -219,5 +222,3 @@ st.markdown("""
 
 # ---------------- FOOTER ----------------
 st.markdown('<div class="footer">Machine Learning Healthcare System</div>', unsafe_allow_html=True)
-
-
